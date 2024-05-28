@@ -106,14 +106,14 @@ name {
 }
 
 .one {
-  width: 200px; /* Increase width */
-  height: 200px; /* Increase height */
+  width: 160px; /* Increase width */
+  height: 160px; /* Increase height */
   position: relative;
 }
 
 .two {
-  width: 200px; /* Increase width */
-  height: 200px; /* Increase height */
+  width: 160px; /* Increase width */
+  height: 160px; /* Increase height */
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -130,17 +130,3 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-/* Modify the .publication class */
-.publication {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 16px 0;
-}
-
-/* Modify the image size and margin */
-.publication img {
-  width: 200px; /* Increase width */
-  max-width: 200px; /* Ensure maximum width */
-  margin-right: 20px; /* Adjust margin as needed */
-}
