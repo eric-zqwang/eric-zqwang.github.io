@@ -84,6 +84,7 @@ a {
   font-size: 14px;
 }
 
+
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
@@ -110,15 +111,21 @@ h2 {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 110px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 110px;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
