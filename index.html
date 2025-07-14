@@ -46,6 +46,49 @@
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="clift_stop()" onmouseover="clift_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='clift_image'><video id="clift_video" width=100% muted loop>
+          <source src="images/clift.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/clift.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function clift_start() {
+            document.getElementById('clift_image').style.opacity = "1";
+            document.getElementById('clift_video').play();
+          }
+
+          function clift_stop() {
+            document.getElementById('clift_image').style.opacity = "0";
+            document.getElementById('clift_video').pause();
+          }
+          clift_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://clift-nvs.github.io/">
+          <span class="papertitle">CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive Neural Rendering</span>
+        </a>
+        <br>
+        <strong>Zhengqing Wang</strong>,
+        <a href="https://ivenwu.com/">Yuefan Wu</a>,
+        <a href="https://jcchen.me/">Jiacheng Chen</a>,
+        <a href="https://zhangfuyang.github.io/">Fuyang Zhang</a>,
+        <a href="https://yasu-furukawa.github.io/">Yasutaka Furukawa</a>
+        <br>
+        <em>arXiv</em>, 2025
+        <br>
+        <a href="https://clift-nvs.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2507.08776">arXiv</a>
+        /
+        <a href="https://github.com/eric-zqwang/CLiFT">code</a>
+      </td>
+    </tr>
+
     <tr onmouseout="mega_bench_stop()" onmouseover="mega_bench_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
