@@ -24,8 +24,8 @@
                 <p class="name" style="text-align: center;">
                   Zhengqing (Eric) Wang
                 </p>
-                <p>I'm a first-year Ph.D. student at Simon Fraser University, advised by <a href="https://www.cs.sfu.ca/~furukawa/">Prof. Yasutaka Furukawa</a> at <a href="http://gruvi.cs.sfu.ca/">GrUVi lab</a>. My research focuses on the generation and reconstruction of 3D shapes and scenes.</p>
-                <p>Previously, I received B.Sc. in Computer Science from Simon Fraser University in 2024, where I worked with <a href="https://www.cs.sfu.ca/~furukawa/">Prof. Yasutaka Furukawa</a> and <a href="https://www.sfu.ca/~xingdong/">Prof. Xing-Dong Yang</a>.</p>
+                <p>I'm a Ph.D. student at Simon Fraser University, advised by <a href="https://www.cs.sfu.ca/~furukawa/">Prof. Yasutaka Furukawa</a> at <a href="http://gruvi.cs.sfu.ca/">GrUVi lab</a>. I'm also a research intern at <a href="https://wayve.ai/">Wayve AI</a> as part of the Wayve Labs, supervised by <a href="https://mattabrown.github.io/">Matthew Brown</a>. Previously, I received B.Sc. in Computer Science from Simon Fraser University in 2024, where I worked with <a href="https://www.cs.sfu.ca/~furukawa/">Prof. Yasutaka Furukawa</a> and <a href="https://www.sfu.ca/~xingdong/">Prof. Xing-Dong Yang</a>.</p>
+                <p>My research focuses on building next-generation geometry foundation models, which includes leveraging unlabelled video for self-supervised learning to improve a wide range of downstream 3D tasks.</p>
                 <p style="text-align:center">
                   <a href="mailto:zwa170@sfu.ca">Email</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.ca/citations?user=lYAcjN0AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
@@ -48,6 +48,49 @@
           </tbody></table>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="lapose_stop()" onmouseover="lapose_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='lapose_image'><video id="lapose_video" width=100% muted loop>
+          <source src="images/la-pose.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/la-pose.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function lapose_start() {
+            document.getElementById('lapose_image').style.opacity = "1";
+            document.getElementById('lapose_video').play();
+          }
+
+          function lapose_stop() {
+            document.getElementById('lapose_image').style.opacity = "0";
+            document.getElementById('lapose_video').pause();
+          }
+          lapose_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://la-pose.github.io/">
+          <span class="papertitle">LA-Pose: Latent Action Pretraining Meets Pose Estimation</span>
+        </a>
+        <br>
+        <strong>Zhengqing Wang*</strong>,
+        <a href="https://scholar.google.com/citations?user=PTfcrPoAAAAJ&hl=en">Saurabh Nair*</a>,
+        <a href="https://scholar.google.com/citations?user=FXpg0nIAAAAJ&hl=en">Prajwal Chidananda*</a>,
+        <a href="https://sites.google.com/view/pujith-kachana/">Pujith Kachana</a>,
+        <a href="https://samwli.github.io/">Samuel Li</a>,
+        <a href="https://mattabrown.github.io/">Matthew Brown</a>,
+        <a href="https://yasu-furukawa.github.io/">Yasutaka Furukawa</a>
+        <br>
+        <em>CVPR</em>, 2026
+        <br>
+        <a href="https://la-pose.github.io/">project page</a>
+        /
+        <a href="#">arXiv</a>
+      </td>
+    </tr>
 
     <tr onmouseout="clift_stop()" onmouseover="clift_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
